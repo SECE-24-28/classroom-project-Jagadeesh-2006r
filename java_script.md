@@ -1,0 +1,58 @@
+var a=5; ---> **var is a global variable** 
+
+if(a<10)
+
+&nbsp;  var a=50;
+
+
+
+console.log(a)
+
+
+
+\*it changes the values when the condition is true 
+
+
+
+
+
+--------------------------------------------------------
+
+
+
+let a=5 -->**local variable**
+
+if(a>4)
+
+&nbsp; let a=10;
+
+
+
+console.log(a);
+
+
+
+
+
+\*it is the local variable when the variable is local it does not changes the data if the condition is true also .
+
+
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

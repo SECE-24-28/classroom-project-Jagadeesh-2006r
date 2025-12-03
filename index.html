@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kishore Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e6e6e6;
+            font-family:"Poppin", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER */
+        #header {
+            background: black;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* NAVBAR */
+        #navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        #navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(121, 121, 121);
+        }
+
+        /* SECTION BASE STYLE */
+        section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* ABOUT SECTION */
+        #about-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #left-card img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 100px;
+        }
+
+        #right-text {
+            max-width: 600px;
+        }
+
+        #right-text p {
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .btn {
+            background: black;
+            color: white;
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: orange;
+        }
+
+        /* QUALIFICATION CARDS */
+        .qualification-card {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+          border:1px solid #1E3A8A;
+          
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* SKILLS TABLE */
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border :1px solid #1E3A8A;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        th {
+            background: #333;
+            color: white;
+        }
+
+        /* CERTIFICATES */
+        #certificates img {
+            width: 260px;
+            height: auto;
+            display: block;
+        }
+
+        .certificate {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #1E3A8A;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* CONTACT CARD */
+        .contact-card {
+            max-width: 700px;
+            background: white;
+            padding: 20px;
+            margin: auto;
+            border :1px solid #1E3A8A;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 900px) {
+            #about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #right-text {
+                max-width: 90%;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER + NAV -->
+<header id="header">
+    <div id="logo">Kishore Portfolio</div>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+
+    <div id="about-container">
+
+        <div id="left-card">
+            <img src="profile.jpeg" id="profile-pic">
+        </div>
+
+        <div id="right-text">
+            <h2>ABOUT ME</h2>
+            <p>
+                I am Kishore, pursuing B.Tech IT at Sri Eshwar College of Engineering.
+                I work in AI, Machine Learning, software development, DSA, and prompt engineering.
+                I enjoy building scalable applications, exploring modern AI tech,
+                and solving real-world problems through efficient software solutions.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- QUALIFICATIONS -->
+<section id="qualifications">
+    <h2>MY QUALIFICATIONS</h2>
+
+    <div class="qualification-card">
+        <h4>B.Tech IT – Sri Eshwar College of Engineering</h4>
+        <p>2024 – 2028</p>
+        <p>Focused on software, web technologies, and AI.</p>
+    </div>
+
+    <div class="qualification-card">
+        <h4>Malar Matric Higher Secondary School (HSC)</h4>
+        <p>Strong performance in Science & Mathematics.</p>
+    </div>
+
+    <div class="qualification-card">
+        <h4>R.N.Oxford Matriculation School (SSLC)</h4>
+        <p>Completed with distinction.</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>TECHNICAL SKILLS</h2>
+
+    <table>
+        <tr><th>Skill</th><th>Proficiency</th></tr>
+        <tr><td>C / C++</td><td>Basics</td></tr>
+        <tr><td>Python</td><td>Intermediate</td></tr>
+        <tr><td>HTML / CSS / JavaScript</td><td>Intermediate</td></tr>
+        <tr><td>SQL</td><td>Basic</td></tr>
+        <tr><td>DSA</td><td>Intermediate</td></tr>
+    </table>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+    <h2>CERTIFICATES</h2>
+
+    <div class="certificate"><img src="certificate1.jpg"></div>
+    <div class="certificate"><img src="certificate2.jpeg"></div>
+    <div class="certificate"><img src="certificate3.jpeg"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contacts">
+    <h2>CONTACT ME</h2>
+
+    <div class="contact-card">
+        <p><strong>Email:</strong> mkkishore084@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9344834407</p>
+        <p><strong>Location:</strong> Coimbatore, Tamil Nadu</p>
+    </div>
+</section>
+
+</body>
+</html>
