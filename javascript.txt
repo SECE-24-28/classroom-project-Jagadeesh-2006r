@@ -1,0 +1,19 @@
+let arr =[12,23,34,456,76]
+for (let a in arr)---->>this for loop gives the index of the elements present in the array
+console.log(a)
+console.log("im outside")
+
+
+another for loop
+-----------------
+let arr =[12,23,34,456,76]
+for (let a of arr)
+console.log(a)
+console.log("im outside")
+
+types of methods
+
+*with argument with return
+*without argument with return 
+*with argument without return
+*without argument without return 
