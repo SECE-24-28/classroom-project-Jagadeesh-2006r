@@ -1,0 +1,14 @@
+mongoconnection command
+----------------------
+
+npm i init -y
+
+express framework install command
+---------------------------------
+
+npm i express express-handlebars body-parser
+
+mongo Db install command
+-------------------------
+
+npm i mongodb
