@@ -1,0 +1,9 @@
+npm init -y -> backend create command
+
+npm i express mongoose dotenv
+
+npm install nodemon
+
+npm install jsonwebtoken   -> to access the jwt token
+
+npm inst bcrypt 
